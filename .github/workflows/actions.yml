@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - "feature/**" # matches featur/featA, feature/featB, doesn't match feature/feat/a
+      - "feature/*" # matches featur/featA, feature/featB, doesn't match feature/feat/a
       - "!feature/featc"
     tags: 
       - v1.*
@@ -44,7 +44,7 @@ jobs:
         run: |
           pwd
           ls -a
-          
+
       - name: Simple JS Action
         id: greet 
         uses: actions/hello-world-javascript-action@v1
