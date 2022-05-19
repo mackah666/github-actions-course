@@ -50,7 +50,7 @@ jobs:
           - "27017:27017"
 
       new_relic:
-        image: newrelic/synthetics-minion:3.0.62
+        image: newrelic/synthetics-minion
         ports:
           - "80:8080"
           - "81:8080"
