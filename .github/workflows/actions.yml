@@ -6,8 +6,8 @@ on:
       - main
       - "feature/*" # matches featur/featA, feature/featB, doesn't match feature/feat/a
       - "!feature/featc"
-    tags: 
-      - v1.*
+    # tags: 
+    #   - v1.*
     paths: 
       - "**.js"
       - "!filename.js"
