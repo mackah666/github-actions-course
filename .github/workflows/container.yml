@@ -49,11 +49,6 @@ jobs:
         ports:
           - "27017:27017"
 
-      new_relic:
-        image: newrelic/synthetics-minion
-        ports:
-          - "80:8080"
-          - "81:8080"
     steps:
       - name: Post a user
         run: 'curl -X POST http://localhost:3001/api/user -H ''Content-Type: application/json'' -d ''{"username": "hello","address": "dwded"}'''
