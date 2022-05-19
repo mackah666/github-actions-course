@@ -14,6 +14,13 @@ jobs:
         with:
           entrypoint: "/bin/echo"
           args: "Hello World"
+
+      - name: Step with docker
+        uses: docker://newrelic/synthetics-minion:3.0.62
+        with:
+          entrypoint: "/bin/echo"
+          args: "Hello World"
+
       - name: Log node version
         uses: docker://node:12.14.1-alpine3.10
         with:
